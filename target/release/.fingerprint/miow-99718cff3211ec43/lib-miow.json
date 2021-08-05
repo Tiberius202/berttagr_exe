@@ -1,0 +1,1 @@
+{"rustc":4721438020156434217,"features":"[]","target":16531639035109422256,"profile":2285152228202085614,"path":4132465403383197548,"deps":[[17671881657559241013,"winapi",false,5326940752486049471]],"local":[{"CheckDepInfo":{"dep_info":"release\\.fingerprint\\miow-99718cff3211ec43\\dep-lib-miow"}}],"rustflags":[],"metadata":5277993697169666678,"config":0,"compile_kind":0}

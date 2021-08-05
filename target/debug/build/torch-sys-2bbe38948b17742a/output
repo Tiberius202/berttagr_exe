@@ -1,0 +1,944 @@
+cargo:rerun-if-env-changed=TORCH_CUDA_VERSION
+cargo:rerun-if-env-changed=LIBTORCH
+cargo:rustc-link-search=native=C:\Program Files\libtorch\lib
+cargo:rerun-if-changed=libtch/torch_api.cpp
+cargo:rerun-if-changed=libtch/torch_api.h
+cargo:rerun-if-changed=libtch/torch_api_generated.cpp.h
+cargo:rerun-if-changed=libtch/torch_api_generated.h
+cargo:rerun-if-changed=libtch/stb_image_write.h
+cargo:rerun-if-changed=libtch/stb_image_resize.h
+cargo:rerun-if-changed=libtch/stb_image.h
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("true")
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoD:\\RustProjects\\BerttagrExe\\target\\debug\\build\\torch-sys-2bbe38948b17742a\\out\\libtch/torch_api.o" "-c" "libtch/torch_api.cpp"
+torch_api.cpp
+C:\Program Files\libtorch\include\c10/macros/Macros.h(189): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<at::Tensor>' being compiled
+C:\Program Files\libtorch\include\ATen/core/TensorBody.h(631): note: see reference to class template instantiation 'c10::optional<at::Tensor>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Tensor
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=at::Generator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<at::Generator>' being compiled
+C:\Program Files\libtorch\include\ATen/core/TensorBody.h(697): note: see reference to class template instantiation 'c10::optional<at::Generator>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::Generator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::string
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::string
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::string>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type_base.h(107): note: see reference to class template instantiation 'c10::optional<std::string>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::string
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(355): note: see reference to class template instantiation 'c10::optional<std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::ShapeSymbol,std::allocator<c10::ShapeSymbol>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(429): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(668): note: see reference to class template instantiation 'c10::VaryingShape<c10::Stride>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<c10::Stride>,std::allocator<c10::optional<c10::Stride>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(429): note: see reference to class template instantiation 'c10::optional<std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(474): note: see reference to class template instantiation 'c10::VaryingShape<int64_t>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<c10::optional<int64_t>,std::allocator<c10::optional<int64_t>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<int64_t,std::allocator<int64_t>>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(572): note: see reference to class template instantiation 'c10::optional<std::vector<int64_t,std::allocator<int64_t>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<int64_t,std::allocator<int64_t>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::QualifiedName>' being compiled
+C:\Program Files\libtorch\include\ATen/core/jit_type.h(907): note: see reference to class template instantiation 'c10::optional<c10::QualifiedName>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::QualifiedName
+        ]
+C:\Program Files\libtorch\include\ATen/core/ivalue_inl.h(449): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::OperatorName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::OperatorName
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::OperatorName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::OperatorName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::OperatorName>' being compiled
+C:\Program Files\libtorch\include\ATen/record_function.h(266): note: see reference to class template instantiation 'c10::optional<c10::OperatorName>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::OperatorName
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:\Program Files\libtorch\include\c10/core/impl/InlineDeviceGuard.h(388): note: see reference to class template instantiation 'c10::optional<c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>>' being compiled
+C:\Program Files\libtorch\include\c10/core/DeviceGuard.h(168): note: see reference to class template instantiation 'c10::impl::InlineOptionalDeviceGuard<c10::impl::VirtualGuardImpl>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::InlineDeviceGuard<c10::impl::VirtualGuardImpl>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::DimVector
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::DimVector
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::DimVector
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=at::DimVector
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<at::DimVector>' being compiled
+C:\Program Files\libtorch\include\ATen/TensorIterator.h(516): note: see reference to class template instantiation 'c10::optional<at::DimVector>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::DimVector
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::tuple<std::string,size_t,size_t>>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/frontend/source_range.h(145): note: see reference to class template instantiation 'c10::optional<std::tuple<std::string,size_t,size_t>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<std::string,size_t,size_t>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::SourceRange>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/frontend/source_range.h(168): note: see reference to class template instantiation 'c10::optional<torch::jit::SourceRange>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::SourceRange
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::function<void (const torch::autograd::profiler::thread_event_lists &)>>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/autograd/profiler_legacy.h(493): note: see reference to class template instantiation 'c10::optional<std::function<void (const torch::autograd::profiler::thread_event_lists &)>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::function<void (const torch::autograd::profiler::thread_event_lists &)>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/autograd/profiler_legacy.h(562): note: see reference to class template instantiation 'c10::optional<std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>,std::allocator<std::vector<torch::autograd::profiler::LegacyEvent,std::allocator<torch::autograd::profiler::LegacyEvent>>>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::autograd::ViewInfo>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/autograd/variable.h(522): note: see reference to class template instantiation 'c10::optional<torch::autograd::ViewInfo>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::autograd::ViewInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::InlinedCallStackPtr>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/ir/scope.h(115): note: see reference to class template instantiation 'c10::optional<torch::jit::InlinedCallStackPtr>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::InlinedCallStackPtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::ModuleInstanceInfo>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/ir/scope.h(119): note: see reference to class template instantiation 'c10::optional<torch::jit::ModuleInstanceInfo>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ModuleInstanceInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::ScopePtr>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/ir/constants.h(28): note: see reference to class template instantiation 'c10::optional<torch::jit::ScopePtr>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::ScopePtr
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::IValue>' being compiled
+C:\Program Files\libtorch\include\ATen/core/function_schema.h(115): note: see reference to class template instantiation 'c10::optional<c10::IValue>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::IValue
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::AliasInfo>' being compiled
+C:\Program Files\libtorch\include\ATen/core/function_schema.h(118): note: see reference to class template instantiation 'c10::optional<c10::AliasInfo>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::AliasInfo
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::impl::AnnotatedSchema>' being compiled
+C:\Program Files\libtorch\include\ATen/core/dispatch/OperatorEntry.h(182): note: see reference to class template instantiation 'c10::optional<c10::impl::AnnotatedSchema>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::AnnotatedSchema
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::impl::OperatorEntry::CppSignatureWithDebug>' being compiled
+C:\Program Files\libtorch\include\ATen/core/dispatch/OperatorEntry.h(234): note: see reference to class template instantiation 'c10::optional<c10::impl::OperatorEntry::CppSignatureWithDebug>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::impl::OperatorEntry::CppSignatureWithDebug
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<c10::either<c10::OperatorName,c10::FunctionSchema>>' being compiled
+C:\Program Files\libtorch\include\ATen/core/op_registration/op_registration.h(429): note: see reference to class template instantiation 'c10::optional<c10::either<c10::OperatorName,c10::FunctionSchema>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=c10::either<c10::OperatorName,c10::FunctionSchema>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<at::ThreadLocalState>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/runtime/interpreter.h(125): note: see reference to class template instantiation 'c10::optional<at::ThreadLocalState>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=at::ThreadLocalState
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::shared_ptr<torch::jit::Graph>>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/api/function_impl.h(124): note: see reference to class template instantiation 'c10::optional<std::shared_ptr<torch::jit::Graph>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::shared_ptr<torch::jit::Graph>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::Method>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/api/object.h(93): note: see reference to class template instantiation 'c10::optional<torch::jit::Method>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Method
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<std::string,std::allocator<std::string>>>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/api/module.h(283): note: see reference to class template instantiation 'c10::optional<std::vector<std::string,std::allocator<std::string>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<std::string,std::allocator<std::string>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t>' being compiled
+C:\Program Files\libtorch\include\torch\csrc\api\include\torch/nn/options/loss.h(404): note: see reference to class template instantiation 'c10::optional<torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::nn::TripletMarginWithDistanceLossOptions::distance_function_t
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<double,std::allocator<double>>>' being compiled
+C:\Program Files\libtorch\include\torch\csrc\api\include\torch/nn/options/upsampling.h(26): note: see reference to class template instantiation 'c10::optional<std::vector<double,std::allocator<double>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<double,std::allocator<double>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::tuple<at::Tensor,at::Tensor>>' being compiled
+C:\Program Files\libtorch\include\torch\csrc\api\include\torch/nn/modules/rnn.h(150): note: see reference to class template instantiation 'c10::optional<std::tuple<at::Tensor,at::Tensor>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::tuple<at::Tensor,at::Tensor>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<std::vector<at::Tensor,std::allocator<at::Tensor>>>' being compiled
+C:\Program Files\libtorch\include\torch\csrc\api\include\torch/optim/lbfgs.h(44): note: see reference to class template instantiation 'c10::optional<std::vector<at::Tensor,std::allocator<at::Tensor>>>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=std::vector<at::Tensor,std::allocator<at::Tensor>>
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Operator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(361): note: see reference to class template instantiation 'c10::constexpr_storage_t<T>' being compiled
+        with
+        [
+            T=torch::jit::Operator
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\type_traits(642): note: see reference to class template instantiation 'c10::trivially_copyable_optimization_optional_base<T>' being compiled
+        with
+        [
+            T=torch::jit::Operator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to class template instantiation 'std::is_copy_constructible<c10::trivially_copyable_optimization_optional_base<T>>' being compiled
+        with
+        [
+            T=torch::jit::Operator
+        ]
+C:\Program Files\libtorch\include\c10/util/Optional.h(418): note: see reference to alias template instantiation 'c10::OptionalBase<torch::jit::Operator>' being compiled
+C:\Program Files\libtorch\include\torch/csrc/jit/runtime/custom_operator.h(23): note: see reference to class template instantiation 'c10::optional<torch::jit::Operator>' being compiled
+C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10::trivially_copyable_optimization_optional_base<T>': destructor was implicitly defined as deleted
+        with
+        [
+            T=torch::jit::Operator
+        ]
+libtch/torch_api.cpp(178): warning C4305: 'return': truncation from 'int' to 'bool'
+libtch/torch_api.cpp(187): warning C4305: 'return': truncation from 'int' to 'bool'
+exit code: 0
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoD:\\RustProjects\\BerttagrExe\\target\\debug\\build\\torch-sys-2bbe38948b17742a\\out\\libtch/fake_cuda_dependency.o" "-c" "libtch/fake_cuda_dependency.cpp"
+fake_cuda_dependency.cpp
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\lib.exe" "-out:D:\\RustProjects\\BerttagrExe\\target\\debug\\build\\torch-sys-2bbe38948b17742a\\out\\libtch.a" "-nologo" "D:\\RustProjects\\BerttagrExe\\target\\debug\\build\\torch-sys-2bbe38948b17742a\\out\\libtch/torch_api.o" "D:\\RustProjects\\BerttagrExe\\target\\debug\\build\\torch-sys-2bbe38948b17742a\\out\\libtch/fake_cuda_dependency.o"
+exit code: 0
+cargo:rustc-link-lib=static=tch
+cargo:rustc-link-search=native=D:\RustProjects\BerttagrExe\target\debug\build\torch-sys-2bbe38948b17742a\out
+CXXSTDLIB_x86_64-pc-windows-msvc = None
+CXXSTDLIB_x86_64_pc_windows_msvc = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None
+cargo:rustc-link-lib=static=tch
+cargo:rustc-link-lib=torch
+cargo:rustc-link-lib=torch_cpu
+cargo:rustc-link-lib=c10

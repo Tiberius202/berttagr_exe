@@ -1,0 +1,13 @@
+D:\RustProjects\BerttagrExe\target\debug\deps\digest-d485aebb6d222ee1.rmeta: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\dyn_digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\errors.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\fixed.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\variable.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\xof.rs
+
+D:\RustProjects\BerttagrExe\target\debug\deps\libdigest-d485aebb6d222ee1.rlib: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\dyn_digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\errors.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\fixed.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\variable.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\xof.rs
+
+D:\RustProjects\BerttagrExe\target\debug\deps\digest-d485aebb6d222ee1.d: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\dyn_digest.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\errors.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\fixed.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\variable.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\xof.rs
+
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\lib.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\digest.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\dyn_digest.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\errors.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\fixed.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\variable.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\digest-0.9.0\src\xof.rs:

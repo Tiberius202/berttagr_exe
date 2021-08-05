@@ -1,0 +1,12 @@
+D:\RustProjects\BerttagrExe\target\release\deps\proc_macro2-54ec0ddd5de166cf.rmeta: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\marker.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\parse.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\detection.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\fallback.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\wrapper.rs
+
+D:\RustProjects\BerttagrExe\target\release\deps\libproc_macro2-54ec0ddd5de166cf.rlib: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\marker.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\parse.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\detection.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\fallback.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\wrapper.rs
+
+D:\RustProjects\BerttagrExe\target\release\deps\proc_macro2-54ec0ddd5de166cf.d: C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\lib.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\marker.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\parse.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\detection.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\fallback.rs C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\wrapper.rs
+
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\lib.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\marker.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\parse.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\detection.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\fallback.rs:
+C:\Users\hp\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.28\src\wrapper.rs:

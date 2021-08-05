@@ -1,0 +1,1 @@
+{"rustc":4721438020156434217,"features":"[]","target":5295372867207801018,"profile":2285152228202085614,"path":9209296492513022037,"deps":[[17671881657559241013,"winapi",false,5326940752486049471]],"local":[{"CheckDepInfo":{"dep_info":"release\\.fingerprint\\winreg-c86515a857aa7e00\\dep-lib-winreg"}}],"rustflags":[],"metadata":4335102603711058446,"config":0,"compile_kind":0}
