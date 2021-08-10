@@ -1,1 +1,1 @@
-D:\RustProjects\BerttagrExe\target\release\rustlib.exe: D:\RustProjects\BerttagrExe\src\lib.rs D:\RustProjects\BerttagrExe\src\main.rs D:\RustProjects\BerttagrExe\src\pos_tagging.rs D:\RustProjects\BerttagrExe\src\rusttagr.rs
+C:\Users\hp\Documents\GitHub\berttagr_exe\target\release\rustlib.exe: C:\Users\hp\Documents\GitHub\berttagr_exe\src\lib.rs C:\Users\hp\Documents\GitHub\berttagr_exe\src\main.rs C:\Users\hp\Documents\GitHub\berttagr_exe\src\pos_tagging.rs C:\Users\hp\Documents\GitHub\berttagr_exe\src\rusttagr.rs

@@ -9,14 +9,21 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.extern crate anyhow;
-use std::env;
+use std::io;
+use std::io::prelude::*;
 
-fn main()  {
-    //get command line arguments
-    let mut cmd_args: Vec<String> = env::args().collect();
-    cmd_args.remove(0);
-    let result: String = rustlib::rusttagr::rust_tag_r(cmd_args);
+fn main() -> io::Result<()>{
+    let mut in_args : Vec<String> = Vec::new();
+
+    let stdin = io::stdin();
+    for line in stdin.lock().lines() {
+        in_args.push(line?);
+    }
+
+    let result: String = rustlib::rusttagr::rust_tag_r(in_args);
 
     //write to a file
     println!("{}", result);
+
+    Ok(())
 }
