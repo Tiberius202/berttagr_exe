@@ -17,12 +17,10 @@ fn main() -> io::Result<()>{
 
     let stdin = io::stdin();
     for line in stdin.lock().lines() {
-        in_args.push(line?);
+        in_args.push(line.expect("Line read properly."));
     }
-
     let result: String = rustlib::rusttagr::rust_tag_r(in_args);
 
-    //write to a file
     println!("{}", result);
 
     Ok(())

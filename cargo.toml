@@ -5,6 +5,6 @@ authors = ["Tiberius202 <Tiberius202@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rust-bert = "0.15.1"
-anyhow = "1.0.40"
-tch = "~0.4.1"
+rust-bert = "~0.16"
+anyhow = "1.0.43"
+tch = "~0.5.0"

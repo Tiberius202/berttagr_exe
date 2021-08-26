@@ -1,15 +1,14 @@
 extern crate anyhow;
 
-use std;
 use crate::pos_tagging;
 use crate::pos_tagging::POSModel;
 
-fn try_tag(input: Vec<String>) -> anyhow::Result<std::vec::Vec<std::vec::Vec<pos_tagging::POSTag>>> {
+fn try_tag(input: Vec<String>) -> anyhow::Result<Vec<Vec<pos_tagging::POSTag>>> {
   let mut formatted : String = "".to_owned();
   for single in input {
     formatted.push_str(&format!("{} ", single));
   }
-  let format_vec = [formatted.as_str()]; 
+  let format_vec = [formatted.as_str()];
   //    Set-up model
   let pos_model = POSModel::new(Default::default())?;
   //    Run model

@@ -1,4 +1,4 @@
-prefix=D:\RustProjects\BerttagrExe\target\release\build\libz-sys-2d9119655eaf5af4\out
+prefix=C:\Users\hp\Documents\GitHub\berttagr_exe\target\release\build\libz-sys-2d9119655eaf5af4\out
 exec_prefix=@exec_prefix@
 libdir=@libdir@
 sharedlibdir=@sharedlibdir@

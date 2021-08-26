@@ -22,7 +22,7 @@ CXXFLAGS = None
 CRATE_CC_NO_DEFAULTS = None
 CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
 DEBUG = Some("false")
-running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-O2" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoD:\\RustProjects\\BerttagrExe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/torch_api.o" "-c" "libtch/torch_api.cpp"
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-O2" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoC:\\Users\\hp\\Documents\\GitHub\\berttagr_exe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/torch_api.o" "-c" "libtch/torch_api.cpp"
 torch_api.cpp
 C:\Program Files\libtorch\include\c10/macros/Macros.h(189): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Program Files\libtorch\include\c10/util/Optional.h(181): warning C4624: 'c10::constexpr_storage_t<T>': destructor was implicitly defined as deleted
@@ -923,17 +923,17 @@ C:\Program Files\libtorch\include\c10/util/Optional.h(387): warning C4624: 'c10:
 libtch/torch_api.cpp(178): warning C4305: 'return': truncation from 'int' to 'bool'
 libtch/torch_api.cpp(187): warning C4305: 'return': truncation from 'int' to 'bool'
 exit code: 0
-running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-O2" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoD:\\RustProjects\\BerttagrExe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/fake_cuda_dependency.o" "-c" "libtch/fake_cuda_dependency.cpp"
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-O2" "-Brepro" "-I" "C:\\Program Files\\libtorch\\include" "-I" "C:\\Program Files\\libtorch\\include/torch/csrc/api/include" "-FoC:\\Users\\hp\\Documents\\GitHub\\berttagr_exe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/fake_cuda_dependency.o" "-c" "libtch/fake_cuda_dependency.cpp"
 fake_cuda_dependency.cpp
 exit code: 0
 AR_x86_64-pc-windows-msvc = None
 AR_x86_64_pc_windows_msvc = None
 HOST_AR = None
 AR = None
-running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\lib.exe" "-out:D:\\RustProjects\\BerttagrExe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch.a" "-nologo" "D:\\RustProjects\\BerttagrExe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/torch_api.o" "D:\\RustProjects\\BerttagrExe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/fake_cuda_dependency.o"
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\bin\\HostX64\\x64\\lib.exe" "-out:C:\\Users\\hp\\Documents\\GitHub\\berttagr_exe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch.a" "-nologo" "C:\\Users\\hp\\Documents\\GitHub\\berttagr_exe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/torch_api.o" "C:\\Users\\hp\\Documents\\GitHub\\berttagr_exe\\target\\release\\build\\torch-sys-5c2368fda72c6b82\\out\\libtch/fake_cuda_dependency.o"
 exit code: 0
 cargo:rustc-link-lib=static=tch
-cargo:rustc-link-search=native=D:\RustProjects\BerttagrExe\target\release\build\torch-sys-5c2368fda72c6b82\out
+cargo:rustc-link-search=native=C:\Users\hp\Documents\GitHub\berttagr_exe\target\release\build\torch-sys-5c2368fda72c6b82\out
 CXXSTDLIB_x86_64-pc-windows-msvc = None
 CXXSTDLIB_x86_64_pc_windows_msvc = None
 HOST_CXXSTDLIB = None

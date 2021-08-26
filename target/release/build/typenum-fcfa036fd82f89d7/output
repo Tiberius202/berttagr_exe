@@ -1,2 +1,2 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=D:\RustProjects\BerttagrExe\target\release\build\typenum-fcfa036fd82f89d7\out\consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=D:\RustProjects\BerttagrExe\target\release\build\typenum-fcfa036fd82f89d7\out\op.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Users\hp\Documents\GitHub\berttagr_exe\target\release\build\typenum-fcfa036fd82f89d7\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=C:\Users\hp\Documents\GitHub\berttagr_exe\target\release\build\typenum-fcfa036fd82f89d7\out\op.rs
